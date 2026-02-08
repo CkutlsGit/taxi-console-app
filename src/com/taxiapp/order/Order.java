@@ -1,7 +1,9 @@
 package com.taxiapp.order;
 
+import com.taxiapp.price_algorithm.PriceAlgorithm;
+
 public class Order {
-    public static int getOrderTariff() {
-        return 300;
+    public static double getOrderTariff() {
+        return PriceAlgorithm.getPrice();
     }
 }

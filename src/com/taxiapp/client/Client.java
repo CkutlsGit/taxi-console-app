@@ -20,7 +20,10 @@ public class Client {
 
                 switch (choice) {
                     case 1 -> OrderClient.callOrder();
-                    case 2 -> Order.getOrderTariff();
+                    case 2 -> {
+                        double tariff = Order.getOrderTariff();
+                        System.out.printf("Текущий тариф: %.2f\n", tariff);
+                    }
                     case 9 -> { return; }
                     case 0 -> System.exit(0);
                     default -> System.out.println("Данной операции не существует. Введите 0, 1, 2 или 9");
