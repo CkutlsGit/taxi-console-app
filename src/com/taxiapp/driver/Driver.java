@@ -19,7 +19,7 @@ public class Driver {
 
                 switch (choice) {
                     case 1 -> OrderDriver.getOrders();
-                    case 2 -> OrderDriver.takeOrder();
+                    case 2 -> OrderDriver.takeOrder(scanner);
                     case 9 -> { return; }
                     case 0 -> System.exit(0);
                     default -> System.out.println("Данной операции не существует. Введите 0, 1, 2 или 9");
