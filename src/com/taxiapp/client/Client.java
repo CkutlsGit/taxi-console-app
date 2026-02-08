@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Client {
     public static void callClientMenu(Scanner scanner) {
         while (true) {
-            System.out.println("Меню клиента.");
+            System.out.println("Меню клиента");
             System.out.println("1. Вызвать такси");
             System.out.println("2. Узнать текущий тариф");
             System.out.println("9. Вернуться в главное меню");
@@ -22,11 +22,11 @@ public class Client {
                     case 1 -> OrderClient.callOrder(scanner);
                     case 2 -> {
                         double tariff = Order.getOrderTariff();
-                        System.out.printf("Текущий тариф: %.2f\n", tariff);
+                        System.out.printf("Текущий тариф: %.2f.\n", tariff);
                     }
                     case 9 -> { return; }
                     case 0 -> System.exit(0);
-                    default -> System.out.println("Данной операции не существует. Введите 0, 1, 2 или 9");
+                    default -> System.out.println("Данной операции не существует. Введите 0, 1, 2 или 9.");
                 }
             }
             else {

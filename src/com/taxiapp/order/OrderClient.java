@@ -13,7 +13,7 @@ public class OrderClient {
         String addressClient = scanner.nextLine();
 
         if (addressClient.isEmpty()) {
-            System.out.println("Адрес не может быть пустым!");
+            System.out.println("Адрес не может быть пустым.");
             return;
         }
 
@@ -22,10 +22,10 @@ public class OrderClient {
         ) {
 
             fileWriter.write(addressClient + " " + DateTaxiApp.getDate() + "\n");
-            System.out.println("Такси вызвано, ожидайте..");
+            System.out.println("Такси вызвано, ожидайте.");
         }
         catch (IOException e) {
-            System.err.println("Произошла ошибка при сохранении заказа! " + e.getMessage());
+            System.err.println("Произошла ошибка при сохранении заказа. " + e.getMessage());
         }
     }
 }

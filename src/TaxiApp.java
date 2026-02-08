@@ -22,7 +22,7 @@ public class TaxiApp {
                     case 1 -> Driver.callDriverMenu(scanner);
                     case 2 -> Client.callClientMenu(scanner);
                     case 0 -> exit = true;
-                    default -> System.out.println("Данной операции не существует. Введите 0, 1 или 2");
+                    default -> System.out.println("Данной операции не существует. Введите 0, 1 или 2.");
                 }
             }
             else {

@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Driver {
     public static void callDriverMenu(Scanner scanner) {
         while (true) {
-            System.out.println("Меню водителя.");
+            System.out.println("Меню водителя");
             System.out.println("1. Посмотреть список заказов");
             System.out.println("2. Взять заказ");
             System.out.println("9. Вернуться в главное меню");
@@ -22,7 +22,7 @@ public class Driver {
                     case 2 -> OrderDriver.takeOrder(scanner);
                     case 9 -> { return; }
                     case 0 -> System.exit(0);
-                    default -> System.out.println("Данной операции не существует. Введите 0, 1, 2 или 9");
+                    default -> System.out.println("Данной операции не существует. Введите 0, 1, 2 или 9.");
                 }
             }
             else {

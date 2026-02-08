@@ -48,7 +48,7 @@ public class OrderDriver {
         Path filePath = Paths.get(Order.FILE_ORDERS_NAME);
 
         if (!Files.exists(filePath)) {
-            System.out.println("Файл заказов не найден!");
+            System.out.println("Файл заказов не найден.");
             return;
         }
 
@@ -56,7 +56,7 @@ public class OrderDriver {
             List<String> allLines = Files.readAllLines(filePath);
 
             if (numberOrder < 1 || numberOrder > allLines.size()) {
-                System.out.println("Неверный номер заказа!");
+                System.out.println("Неверный номер заказа.");
                 return;
             }
 
@@ -64,7 +64,7 @@ public class OrderDriver {
 
             Files.write(filePath, allLines);
 
-            System.out.println("Заказ №" + numberOrder + " успешно удален!");
+            System.out.println("Заказ №" + numberOrder + " успешно удален.");
         }
         catch (IOException e) {
             System.err.println(e.getMessage());
@@ -81,7 +81,7 @@ public class OrderDriver {
             int numberOrder = scanner.nextInt();
 
             if (numberOrder < 1 || numberOrder > countOrders) {
-                System.out.println("Такого номера заказа не существует!");
+                System.out.println("Такого номера заказа не существует.");
             }
 
             try (
@@ -106,7 +106,7 @@ public class OrderDriver {
             }
         }
         else {
-            System.out.println("Введите число!");
+            System.out.println("Введите число.");
         }
     }
 }
