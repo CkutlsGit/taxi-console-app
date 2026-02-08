@@ -19,7 +19,7 @@ public class TaxiApp {
                 int choice = scanner.nextInt();
 
                 switch (choice) {
-                    case 1 -> Driver.callDriverMenu();
+                    case 1 -> Driver.callDriverMenu(scanner);
                     case 2 -> Client.callClientMenu(scanner);
                     case 0 -> exit = true;
                     default -> System.out.println("Данной операции не существует. Введите 0, 1 или 2");
