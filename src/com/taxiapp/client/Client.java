@@ -1,6 +1,7 @@
 package com.taxiapp.client;
 
 import com.taxiapp.order.Order;
+import com.taxiapp.order.OrderClient;
 
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class Client {
                 int choice = scanner.nextInt();
 
                 switch (choice) {
-                    case 1 -> Order.callOrder();
+                    case 1 -> OrderClient.callOrder();
                     case 2 -> Order.getOrderTariff();
                     case 9 -> { return; }
                     case 0 -> System.exit(0);
