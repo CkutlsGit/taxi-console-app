@@ -3,6 +3,9 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+### Project .txt file ###
+orders.txt
+
 ### Eclipse ###
 .apt_generated
 .classpath

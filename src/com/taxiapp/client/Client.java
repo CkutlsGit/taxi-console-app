@@ -19,7 +19,7 @@ public class Client {
                 int choice = scanner.nextInt();
 
                 switch (choice) {
-                    case 1 -> OrderClient.callOrder();
+                    case 1 -> OrderClient.callOrder(scanner);
                     case 2 -> {
                         double tariff = Order.getOrderTariff();
                         System.out.printf("Текущий тариф: %.2f\n", tariff);
